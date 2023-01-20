@@ -48,4 +48,9 @@ input:focus-visible {
 }
 .meaning-container {
     display: none;
+    margin: 10px;
+}
+
+.meaning-container > * {
+    margin: 5px;
 }
