@@ -1,0 +1,1 @@
+const inputEl = document.getElementById("inp")
