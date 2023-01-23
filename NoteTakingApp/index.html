@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Notes Hassle-Free</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="alert-container" id="alert-container">
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.parentElement.style.display='none';">&times;</span>
+            <strong>DELETE?</strong> Are You Sure To Delete This Note?
+            <br>
+            <button class="alert-btn" id="yBtn">YES</button>
+            <button class="alert-btn" id="nBtn">NO</button>
+        </div>
+    </div>
+    <h1 class="heading">NoteOn - Keep All Your Short Notes In A Single Place📕</h1>
+    <p class="info-text">Click On ✚ To Add A New Note.<br>Add Text inside Note and Tap Outside Note To Save.<br>Double
+        Click On A Note To Remove It!<br>When page becomes full with Note Cards, Scroll Down to add a New Note.</p>
+
+    <div class="app" id="app">
+        <button class="btn" id="btn">+</button>
+    </div>
+    <footer class="footer">
+        <p>Made with Love By Sayan&hearts;</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
