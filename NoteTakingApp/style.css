@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+body {
+    min-height: 95vh;
+    background: linear-gradient(to left, lightblue, lightgreen);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    color: rgba(72, 61, 139, 0.7);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    background-color: rgba(237, 175, 99, 0.6);
+    opacity: 67%;
+}
+
+.info-text {
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    font-size: 15px;
+    font-weight: bold;
+    /* margin-top: 20px; */
+    line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+}
+
+.alert-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
+    /* change to flex when note needs to be deleted */
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 180px;
+    opacity: 100%;
+}
+
+.alert {
+    padding: 20px;
+    background-color: rgb(105 84 84 / 70%);
+    color: white;
+    width: 78vw;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 100%;
+    margin: 6px;
+    text-align: center;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.alert-btn {
+    width: 100px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: rgba(74, 50, 50, 0.8);
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.alert-btn:hover {
+    background-color: rgba(74, 50, 50, 0.95);
+    border: 1.5px solid white;
+}
+
+.alert-btn:active {
+    border-left: 1.75px solid gray;
+    border-bottom: 1.75px solid gray;
+    color: whitesmoke;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.alert-container::before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 40px;
+    justify-content: center;
+    padding: 30px 50px;
+    z-index: -1;
+}
+
+.note {
+    height: 200px;
+    padding: 17px;
+    border-radius: 15px;
+    resize: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: rgba(72, 61, 139, 0.8);
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.note::placeholder {
+    color: rgba(128, 128, 128, 0.37);
+    text-align: center;
+}
+
+.note:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 400ms ease;
+}
+
+.note:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: all 400ms ease-in;
+}
+
+.btn {
+    height: 200px;
+    border-color: rgba(255, 255, 255, 0.37);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    font-size: 155px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 400ms ease;
+}
+
+.footer {
+    width: 100vw;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(111 120 189);
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+    padding: 12px;
+    opacity: 45%;
+}
