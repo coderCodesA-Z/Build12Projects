@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <h1 class="title">Convert Currency with Ease!</h1>
     <div class="container">
         <h1 class="heading">Convert Currency</h1>
         <div class="currency-container custom-select">
@@ -17,7 +18,7 @@
                 <option value="INR">INR</option>
                 <option value="AUD">AUD</option>
                 <option value="CAD">CAD</option>
-                <option value="EURO">EURO</option>
+                <option value="EUR">EURO</option>
                 <option value="GBP">GBP</option>
                 <option value="JPY">JPY</option>
                 <option value="USD" selected>USD</option>
@@ -29,15 +30,17 @@
                 <option value="INR" selected>INR</option>
                 <option value="AUD">AUD</option>
                 <option value="CAD">CAD</option>
-                <option value="EURO">EURO</option>
+                <option value="EUR">EURO</option>
                 <option value="GBP">GBP</option>
                 <option value="JPY">JPY</option>
                 <option value="USD">USD</option>
             </select>
             <input type="number" id="worth-second" disabled>
         </div>
-        <p class="exchange-rate" id="exchange-rate">1 USD = 138.5802 JPY</p>
+        <p class="exchange-rate" id="exchange-rate">1 <span id="currency1">USD</span> = <span
+                id="exchangeVal">138.5802</span> <span id="currency2">JPY</span></p>
     </div>
+    <footer>Made By Sayan With Love&hearts;</footer>
     <script src="script.js"></script>
 </body>
 

@@ -13,6 +13,13 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+h1.title {
+    position: fixed;
+    top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -22,9 +29,10 @@ body {
     border-radius: 5px;
     padding: 30px;
     width: 30vw;
-    height: 33vh;
+    min-height: 33vh;
     min-width: fit-content;
     text-align: center;
+    margin: 10px;
 }
 
 .heading {
@@ -44,7 +52,8 @@ body {
     padding: 10px;
     vertical-align: middle;
     background-color: antiquewhite;
-    color : brown;
+    color: brown;
+    font-weight: bold;
 }
 
 .currency-container input {
@@ -62,6 +71,12 @@ input:focus {
     outline: none;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 .exchange-rate {
     width: 100%;
@@ -70,4 +85,9 @@ input:focus {
     font-size: 16px;
     font-weight: 600;
     margin-top: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
 }
