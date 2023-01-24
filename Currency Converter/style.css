@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(197, 221, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkcyan;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 30px;
+    width: 30vw;
+    height: 33vh;
+    min-width: fit-content;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 10px;
+}
+
+.currency-container {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.currency-container select {
+    border: 1px solid wheat;
+    border-radius: 5px;
+    padding: 10px;
+    vertical-align: middle;
+    background-color: antiquewhite;
+    color : brown;
+}
+
+.currency-container input {
+    border: 1px solid wheat;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(197, 221, 150);
+}
+
+select:focus,
+input:focus {
+    outline: none;
+}
+
+
+.exchange-rate {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
