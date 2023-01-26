@@ -1,6 +1,6 @@
 const inputEl = document.getElementById("input");
 const errorEl = document.getElementById("error");
-const resEl = 
+const resEl = document.getElementById("copmputed-weight");
 
    let errorTime;
 function updateRes() {
@@ -13,7 +13,7 @@ function updateRes() {
             inputEl.value = "";
         },2000);
     } else {
-
+        resEl.innerText = inputElVal/2.2;
     }
 }
 
