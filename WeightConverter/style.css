@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to left top, rgb(40 41 69) 19%, rgb(117 41 55) 81%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(85, 222, 222, 0.4);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.2);
+    min-height: 40vh;
+    width: 60vh;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 9px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow:7px 13px 39px 9px #4c0f0f;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 25px 0;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px #6c2424;
+}
+
+.container .input-container {
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bolder;
+    min-height: 3rem;
+    padding: 4px;
+    text-align: center;
+    text-shadow: 0 0 5px #6c2424;
+}
+
+.container .input-container label {
+    vertical-align: middle;
+}
+
+.container .input-container .input {
+    vertical-align: middle;
+    width: 60%;
+    height: 2rem;
+    background-color: rgba(0,0,0,0.1);
+    border: 2px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 5px #6c2424;
+    border-radius: 5px;
+    font-size: 18px;
+    color: rgba(0, 255, 255, 0.3);
+    text-shadow: 0 0 5px #6c2424;
+    padding: 0 8px;
+}
+
+.container .input-container .input:focus {
+    outline: none;
+}
+
+.container .input-container .input::placeholder {
+    color : rgba(255,255,255,0.3);
+    text-shadow: none;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.container p {
+    margin: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+    text-shadow: 0 0 5px #6c2424;
+    letter-spacing: 2px;
+}
