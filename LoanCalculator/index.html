@@ -14,16 +14,17 @@
         <h1 class="heading">Calculate Loan</h1>
         <p>Loan Amount $
             <input class="input" type="number" name="loan-amount" id="loan-amount" min="1" max="500000" value="10000"
-                title="value must be between 1 to 500000" onchange="calculateLoan()">
+            title="value must be between 1 to 500000" onchange="calculateLoan()">
         </p>
         <p>Interest Rate %
             <input class="input" type="number" name="interest-rate" id="interest-rate" min="0" max="100" value="10"
-                step=".1" title="value must be between 0 to 100" onchange="calculateLoan()">
+            step=".1" title="value must be between 0 to 100" onchange="calculateLoan()">
         </p>
         <p>Month(s) to Pay
             <input class="input" type="number" name="months-to-pay" id="months-to-pay" min="6" max="48" value="12" title="value must be between 6 to 48" onchange="calculateLoan()">
         </p>
         <p class="payment">Montly Payment: <span id="monthly-payment"></span></p>
+        <p class="instruction">Default Values are Used. Edit for Calculating Loan.</p>
     </div>
     <script src="script.js"></script>
 </body>
